@@ -1,9 +1,13 @@
 /*Start Font*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap);
 /*End Font*/
 
 /* Start Body */
 body {
-    color: brown;
+    color: black;
     Font-family: helvetica, Arial , sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -37,8 +41,15 @@ body {
 /* End Container */
 
 /* Start Logo*/
-.logo {
+.logo1 {
+    background-image: url('http://fullcolorparty.com/wp-content/uploads/2016/06/van2.jpg');
     text-align: center;
+    width: 90%;
+    height: 440px;
+    padding-top: 200px;
+}
+.logo img{
+    margin: auto 0;
 }
 /* End Logo*/
 
@@ -57,20 +68,22 @@ a:active {
 
 /*Start menu primer*/
 .menu-primer ul {
-    background-color: blanchedalmond;
+    background-color: #520030;
     border-radius: 4px;
     box-shadow: 
-        0 3px 6px -1px rgba(0, 0, 0, .2);
+        0 3px 6px -1px rgba(0, 0, 0, .5);
 }
 
 .menu-primer li {
     border-right: 1px solid rgba(0, 0, 0, .12);
     display: inline-block;
     margin: 0 -4px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu-primer a{
-    color: black;
+    color: rgb(248, 192, 192);
+    font-weight: bold;
     font-size: 15px;
     display: inline-block;
     padding: 15px 25px;
@@ -79,17 +92,181 @@ a:active {
 }
 
 .menu-primer a:hover {
-    background-color: whitesmoke;
-    color: rgb(5, 39, 28);
+    background-color: rgb(248, 192, 192);
+    color: #520030;
     text-decoration: none;
 }
 
 .menu-primer .active {
-    background-color: whitesmoke;
-    color: rgb(5, 39, 28);
+    background-color:  rgb(248, 192, 192);
+    color: #520030;
     text-decoration: none;
 }
 /*End menu primer*/
+
+/*start littlesnippets*/
+
+.figure{
+    text-align: center;
+    margin: 0 50px;
+}
+.snip1563 {
+  background-color: #fff;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin: 10px 5px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.snip1563 *,
+.snip1563 *:before,
+.snip1563 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563 img {
+  height: 300px;
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1563:before,
+.snip1563:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #D699C2;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563:before {
+  -webkit-transform: skew(30deg) translateX(80%);
+  transform: skew(30deg) translateX(80%);
+}
+
+.snip1563:after {
+  -webkit-transform: skew(-30deg) translateX(70%);
+  transform: skew(-30deg) translateX(70%);
+}
+
+.snip1563 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 20px 20px 20px 40%;
+}
+
+.snip1563 figcaption:before,
+.snip1563 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #DF334B;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1563 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(100%);
+  transform: skew(30deg) translateX(100%);
+}
+
+.snip1563 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(90%);
+  transform: skew(-30deg) translateX(90%);
+}
+
+.snip1563 h3,
+.snip1563 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1563 h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip1563 p {
+  font-size: 0.9em;
+}
+
+.snip1563 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1563:hover h3,
+.snip1563.hover h3,
+.snip1563:hover p,
+.snip1563.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.snip1563:hover:before,
+.snip1563.hover:before {
+  -webkit-transform: skew(30deg) translateX(30%);
+  transform: skew(30deg) translateX(30%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1563:hover:after,
+.snip1563.hover:after {
+  -webkit-transform: skew(-30deg) translateX(20%);
+  transform: skew(-30deg) translateX(20%);
+}
+
+.snip1563:hover figcaption:before,
+.snip1563.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(50%);
+  transform: skew(30deg) translateX(50%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1563:hover figcaption:after,
+.snip1563.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(40%);
+  transform: skew(-30deg) translateX(40%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/*end littlesnippets*/
 
 /*Start Heading*/
 h1, h2, h3, h4, h5, h6{
@@ -98,6 +275,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1 {
     font-size: 28px;
+    color: rgb(20, 20, 20);
 }
 h2 {
     font-size: 24px;
@@ -118,16 +296,19 @@ h6 {
 
 /*Start Jumbotron*/
 .jumbotron {
-    background-color: rgb(209, 141, 141);
-    border: 1px solid blanchedalmond;
+    background-color: rgba(101, 1, 75,3);
+    border: 1px solid none;
     border-radius: 4px;
     padding: 20px 0;
 }
 .jumbotron h1 {
+    color: rgb(248, 192, 192);
+    font-family: 'Courgette', cursive;
     font-size: 32px;
     padding: 0 20px;
 }
 .jumbotron h3 {
+    color: rgb(248, 192, 192);
     font-size: 20px;
     padding: 0 20px;
 }
@@ -147,11 +328,24 @@ h6 {
 .main-home-two .box-isi {
     height: 140px;
 }
+
+.main-one {
+    float: left;
+    overflow: auto;
+    width: 70%;
+}
 /*End Main*/
+
+/*Start Sidebar*/
+.sidebar-two {
+    float: right;
+    overflow: auto;
+    width: 29%;
+}
 
 /*Start Box*/
 .box-heading {
-    background-color: rgb(174, 250, 250);
+    background-color: #520030;
     border: 1px solid blanchedalmond;
     border-radius: 3px 3px 0 0;
     margin: 0;
@@ -159,8 +353,21 @@ h6 {
     text-transform: uppercase;
 }
 .box-heading h4 {
-    font-size: 14px;
+    font-size: 20px;
+    color:rgb(248, 192, 192);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+.box-isi1 {
+    background-color: antiquewhite;
+    border: 1px solid blanchedalmond;
+    border-top: 3px 3px 0 0;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif; 
+    box-shadow: 
+    0 3px 6px -1px #D699C2;
 }
 .box-isi {
     background-color: antiquewhite;
@@ -168,6 +375,7 @@ h6 {
     border-top: 3px 3px 0 0;
     margin: 0;
     padding: 10px 20px;
+    font-size: 15px;
 }
 /*End Box*/
 
@@ -179,9 +387,24 @@ h6 {
 }
 /*End Testimonial*/
 
+/*Start Layanan Table*/
+.layanan-table {
+    border: 1px solid pink;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+.layanan-table thk{
+    background-color: whitesmoke;
+}
+.layanan-table td{
+    text-align: center;
+}
+/*End Layanan Table*/
+
 /* Start Menu sekunder*/
 .menu-sekunder {
-    background-color: bisque;
+    background-color: rgba(197, 116, 105, 0.829);
     border-bottom: 1px solid pink;
     border-top: auto;
     overflow: auto;
