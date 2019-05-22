@@ -15,58 +15,61 @@
         <!--End desccription-->
 
         <!--Start CSS-->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="Stylesheet" href="styles/style.css">
+        <!-- <link rel="Stylesheet" href="styles/slider.css"> -->
         <!--End CSS-->
         
     </head>
     <body>
-
-        <!--Start logo-->
-        <div class="container gambar">
-            <div class="banner">
-                <a href="index.html" title="I'mazing Event Organizer">
-                    <img id="one" src="http://fullcolorparty.com/wp-content/uploads/2016/06/van2.jpg" alt="gambar sweet seveenteen" >
-                </a>
-                <a href="index.html" title="I'mazing Event Organizer">
-                    <img id="two" src="images/logo.jpg" alt="logo T-our traveller" >
-                </a>
-            </div>
-        </div>
-        <!--End logo-->
-
-        <!--Start menu-primer-->
-        <div class="container menu-primer">
-            <ul>
-                <li>
-                    <a href="index.html" title="Beranda" class="active">Beranda</a>
-                </li>
-                <li>
-                    <a href="tentang.html" title="Tentang Kami">Tentang Kami</a>
-                </li>
-                <li>
-                    <a href="layanan.html" title="Layanan">layanan</a>
-                </li>
-                <li>
-                    <a href="artikel.html" title="Artikel">Artikel</a>
-                </li>
-                <li>
-                    <a href="pembayaran.html" title="Cara Pembayaran">Cara Pembayaran</a>
-                </li>
-                <li>
-                    <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
-                </li>
-                <li>
-                    <a href="kontak.html" title="Kontak Kami">Kontak Kami</a>
-                </li>
-            </ul>
-        </div>
-        <!--End menu-primer-->
-
+        <!-- start logo-menu-->
+        <nav id="atas" class="navbar navbar-default navbar-fixed-top">
+                <!--Start logo-->
+                <div class="container logo">
+                    <a href="index.html" title="I'mazing Event Organizer">
+                        <img id="two" src="images/logo.jpg" alt="logo T-our traveller" width="250px">
+                    </a>
+                </div>
+                <!--End logo-->
+                <!--Start menu-primer-->
+                <nav class=" container menu-primer">
+                    <ul>
+                        <li>
+                            <a href="index.html" title="Beranda" class="active">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="tentang.html" title="Tentang Kami">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="layanan.html" title="Layanan">layanan</a>
+                        </li>
+                        <li>
+                            <a href="pembayaran.html" title="Cara Pembayaran">Cara Pembayaran</a>
+                        </li>
+                        <li>
+                            <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
+                        </li>
+                        <li>
+                            <a href="kontak.html" title="Kontak Kami">Kontak Kami</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--End menu-primer-->
+            </nav>
+        <!-- start logo-menu-->
+        
         <!--Start jumbotron-->
-        <div class="container  jumbotron 1">
-            <h1>Selamat datang di I'mazing Event Organizer</h1>
-            <h3>Memberikan pengalaman berharga dengan acara dan tempat yang luar biasa tak terlupakan </h3>
+        <div class="jumbotron">
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="https://bilingua.io/wp-content/uploads/2017/04/language-learning-plan-1024x576.jpg" width="800px">
+                <img class="mySlides" src="http://fellasproductionid.com/wp-content/uploads/2018/08/Cover-3-1.jpg" width="800px">
+                <img class="mySlides" src="https://axioo.com/wp-content/uploads/2015/11/axioo-helena-sweet-17th-birthday-07.jpg" width="800px">
+            </div>
+            <div class="isi">
+                <h1>Selamat datang di I'mazing Event Organizer</h1>
+                <h3>Memberikan pengalaman berharga dengan acara dan tempat yang luar biasa tak terlupakan </h3>
+            </div> 
         </div>
         <!--End Jumbotron-->
 
@@ -254,6 +257,23 @@
         <!--End copyright-->
 
         <!--startjs-->
+        <script>
+                var myIndex = 0;
+                carousel();
+    
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+        </script>
+    
         <script>$(".hover").mouseleave(
             function () {
               $(this).removeClass("hover");
