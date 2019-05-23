@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url(https://fonts.googleapis.com/css?family=Oswald&display=swap);
 /*End Font*/
 
 /* Start Body */
@@ -35,17 +36,30 @@ body {
 }
 
 .container-full {
-    margin: 10px auto;
+    margin: 5px auto;
     overflow: auto;
     width: 100%;
 }
 /* End Container */
 
+/* start header */
+.header {
+  background-image: url('http://marketeers.com/wp-content/uploads/2016/06/158vhQ_BNI2046.jpg');
+  height: 90%;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+/* end header */
+
 /* Start atas*/
 #atas {
   width:100%;
-  padding: 10px;
-  height: 200px;
+  padding: none;
+  height: 150px;
   position: relative;
 }
 /* End atas*/
@@ -87,7 +101,7 @@ a:active {
 .menu-primer li {
     border-right: 1px solid rgba(0, 0, 0, .12);
     display: inline-block;
-    margin: 0 -4px;
+    margin: 0 -3px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -96,7 +110,7 @@ a:active {
     font-weight: bold;
     font-size: 15px;
     display: inline-block;
-    padding: 15px 25px;
+    padding: 13px 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -118,7 +132,7 @@ a:active {
 
 .figure{
     text-align: center;
-    margin: 0 50px;
+    margin: 0 60px;
 }
 .snip1563 {
   background-color: #fff;
@@ -450,13 +464,14 @@ a:active {
   }
   
   .figure1 {
-    background-color: #212121;
+    background-color:rgb(248, 192, 192);
     display: inline-block;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 10px auto;
     height: 300px;
-    width: 400px;
+    width: 100%;
+    padding: 10px;
   }
   
 
@@ -469,13 +484,14 @@ h1, h2, h3, h4, h5, h6{
 }
 h1 {
     font-size: 28px;
-    color:rgb(248, 192, 192);;
+    color:rgb(248, 192, 192);
 }
 h2 {
     font-size: 24px;
 }
 h3 {
     font-size: 18px;
+    color: white;
 }
 h4 {
     font-size: 16px;
@@ -489,27 +505,42 @@ h6 {
 /*End Heading*/
 
 /*Start Jumbotron*/
+.jumbotronsatu {
+  width: 100%;
+  background-color: rgba(49, 4, 26, 0.623);
+  border-radius: 10%;
+}
+.isi2 {
+ padding-left: 15px;
+}
 .mySlides {
   position: relative;
   width: 200%;
   height: 600px;
   border: 3px solid none;
+  padding: none;
 }
 
 .jumbotron {
   background-color: white;
   width: 100%;
-  border-radius: ;
-  padding: ;
 }
 .isi {
-  background-color: rgba(84, 76, 131, .12);
+  background-color: rgba(49, 4, 26, 0.623);
   position: absolute;
-  top: 600px;
+  top: 300px;
   right: 80px;
   width: 300px;
   height: 400px;
-  border: 3px solid #73AD21;
+  border: 3px solid none;
+  box-shadow: 
+    2px 4px 7px -1px #520030;
+}
+.tulisan{
+  color: white;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 38px;
 }
 /*End Jumbotron*/
 
